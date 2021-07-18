@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    src: url('../font/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-style: normal;
+    src: url('../font/Montserrat-SemiBold.ttf');
+}
+
+* {
+    font-family: 'RobotoMono Regular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat SemiBold';
+}
