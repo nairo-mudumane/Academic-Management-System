@@ -37,8 +37,20 @@ header {
 }
 
 .logo {
-    width: 4rem;
-    height: 2.5rem;
+    /* width: 4rem;
+    height: 2.5rem; */
+    height: 100%;
+}
+
+/* inscricao online */
+.logo a {
+    color: var(--color-black);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: var(--color-blue-2);
 }
 
 .title {
