@@ -1,0 +1,35 @@
+/* pagina inicial */
+
+@media only screen and (max-width: 768px) {
+
+    /* header */
+    /* .logo {
+    display: none;
+} */
+    .header {
+        display: block;
+        padding: .5rem 1rem;
+    }
+
+    .nav ul {
+        display: block;
+    }
+
+    .navItem {
+        margin: .5rem 0;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .mobileToggle {
+        display: block;
+        color: var(--color-black);
+        font-size: 1.2rem;
+    }
+
+    .footer .copyright {
+        padding: .5rem 1rem;
+    }
+}

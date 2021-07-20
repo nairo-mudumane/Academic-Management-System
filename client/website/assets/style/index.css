@@ -2,30 +2,17 @@
 
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    position: relative;
+    width: 100%;
 }
 
-header {
+.header-wrapper {
+    background-color: var(--bg-dark);
     width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
 }
 
 .header {
+    background-color: var(--color-white);
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
     justify-content: space-between;
     align-items: center;
 
@@ -42,7 +29,7 @@ header {
     height: 100%;
 }
 
-/* inscricao online */
+/* link de inscricao online */
 .logo a {
     color: var(--color-black);
     font-size: 1.2rem;
@@ -58,7 +45,6 @@ header {
 }
 
 .nav {
-    background-color: var(--bg-dark);
     display: block;
     box-shadow: 0px 0px 2px var(--color-black);
 
@@ -93,18 +79,29 @@ header {
 
 .navItem a:hover {
     color: var(--color-blue-2);
+    text-decoration: underline;
 }
 
 .slide-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 100%;
     height: 70vh;
     position: relative;
+}
 
-    border: 1px solid black;
+.slide-img-wrapper {
+    background-color: var(--bg-dark);
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+/* para transicao suave das imagens */
+.slide-img-wrapper img {
+    transition: all .4s cubic-bezier(1, 0, 0, 1);
 }
 
 .slide-container button {
@@ -120,6 +117,7 @@ header {
     padding: 1.5rem;
     margin: 0;
     position: absolute;
+    top: 50%;
     z-index: 1;
 }
 
@@ -138,21 +136,15 @@ header {
 
 .footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: flex-start;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 .footer .copyright {
     background-color: var(--bg-dark);
 
     width: 100%;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
 }
 
 .footer .copyright p {
@@ -160,20 +152,3 @@ header {
     margin: 0;
 }
 
-@media only screen and (max-width: 768px) {
-
-    /* header */
-    .logo {
-        display: none;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-
-    .mobileToggle {
-        display: block;
-        color: var(--color-black);
-        font-size: 1.2rem;
-    }
-}

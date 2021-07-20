@@ -12,17 +12,22 @@
 
 /* scrollbar */
 *::-webkit-scrollbar {
-    width: 10px;
-    background-color: rgba(30, 35, 39, .8);
+    width: .80rem;
+    background-color: var(--color-white);
 
     position: fixed;
     z-index: 99;
 }
 
 *::-webkit-scrollbar-thumb {
-    background: #5b5b5b;
+    background: rgba(108, 117, 125, .3);
     border-radius: 6px;
     width: 8px;
+    transition: background-color .3s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(108, 117, 125, .5);
 }
 
 body {
@@ -135,6 +140,6 @@ img {
     cursor: not-allowed;
 }
 
-.linkActive {
+.active-link {
     color: var(--color-blue-2) !important;
 }
